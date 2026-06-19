@@ -1,0 +1,45 @@
+{
+    "name": "mchardians/bladescript",
+    "description": "Auto transform javascript imports in laravel blade view to Vite assets",
+    "type": "library",
+    "license": "MIT",
+    "scripts": {
+        "test": "pest"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mchardians\\Bladescript\\": "src/"
+        }
+    },
+    "autoload-dev": {
+      "psr-4": {
+            "Mchardians\\Bladescript\\Tests\\": "tests/"
+      }
+    },
+    "authors": [
+        {
+            "name": "Mochammad Ardiansyah",
+            "email": "mchardians@gmail.com"
+        }
+    ],
+    "require": {
+      "php": "^8.3",
+      "illuminate/support": "^11.0"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+            "Mchardians\\Bladescript\\BladeScriptServiceProvider"
+        ]
+      }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.17",
+        "pestphp/pest": "^4.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
