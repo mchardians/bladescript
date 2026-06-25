@@ -68,7 +68,7 @@ return [
 
 Write your code inside a ```<script type="module">``` tag within your Blade views or components.
 
-1. **Javascript Imports**
+1. **Javascript Imports**   
 Supports static, dynamic, and side-effect imports out of the box.
 
     ```javascript
@@ -92,7 +92,7 @@ Supports static, dynamic, and side-effect imports out of the box.
 
     ```
 
-2. **CSS Imports**
+2. **CSS Imports**   
 Useful for building isolated Vanilla JS Custom Elements. The package safely transforms this into native DOM manipulation instructions to prevent browser blocking.
 
     ```javascript
@@ -104,7 +104,7 @@ Useful for building isolated Vanilla JS Custom Elements. The package safely tran
 
     ```
 
-3. **Media Imports**
+3. **Media Imports**   
 Media imports are automatically compiled into constant variables ready to be used in your logic.
 
     ```javascript
