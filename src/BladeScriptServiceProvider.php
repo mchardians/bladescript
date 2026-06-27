@@ -23,6 +23,10 @@ class BladeScriptServiceProvider extends ServiceProvider
         ], 'bladescript');
 
         Blade::precompiler(function ($string) {
+            if (!str_contains($string, 'import') && !str_contains($string, 'export')) {
+                return $string;
+            }
+
             $jsPrefix = config('bladescript.aliases.js.prefix', '@/');
             $jsPath = rtrim(config('bladescript.aliases.js.path', 'resources/js/'), '/');
             
